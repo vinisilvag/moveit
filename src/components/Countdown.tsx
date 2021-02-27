@@ -39,6 +39,11 @@ export default function Countdown() {
           disabled={hasFinished}
         >
           Ciclo encerrado
+          <img
+            style={{marginLeft: '1rem'}}
+            src="/icons/buttons/complete.svg"
+            alt="Tempo finalizado"
+          />
         </button>
       ) : (
         <>
@@ -49,6 +54,11 @@ export default function Countdown() {
               onClick={resetCountdown}
             >
               Abandonar ciclo
+              <img
+                style={{marginLeft: '1rem'}}
+                src="/icons/buttons/close.svg"
+                alt="Abandonar ciclo"
+              />
             </button>
           ) : (
             <button
@@ -57,6 +67,11 @@ export default function Countdown() {
               onClick={startCountdown}
             >
               Iniciar um ciclo
+              <img
+                style={{marginLeft: '1rem'}}
+                src="/icons/buttons/start.svg"
+                alt="Iniciar um ciclo"
+              />
             </button>
           )}
         </>

@@ -71,6 +71,10 @@
   color: var(--white);
 }
 
+.countdownButtonActive:not(:disabled):hover img {
+  content: url("/icons/buttons/close-hover.svg");
+}
+
 .countdownButton:disabled {
   background-color: var(--white);
   color: var(--text);
